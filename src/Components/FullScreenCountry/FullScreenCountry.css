@@ -9,10 +9,12 @@
   visibility: hidden;
   position: fixed;
   top: 0;
+  bottom: 0;
   gap: 80px;
   margin-top: -45px;
   padding: 0 50px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 @media screen and (max-width: 1250px) {
   .fullScreenCountry {
@@ -30,7 +32,7 @@
 
 .fullScreenCountry__button {
   width: 140px;
-  height: 45px;
+  min-height: 45px;
   font-weight: 300;
   font-size: 16px;
   color: var(--colorModeText);
