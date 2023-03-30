@@ -30,7 +30,7 @@ const Filter = ({ options }) => {
             }
          />
          <select
-            name="sorting"
+            name="sortingCountriesByContinent"
             id="countrySorting"
             className="filter__select"
             onChange={(evt) =>
