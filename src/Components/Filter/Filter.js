@@ -30,7 +30,7 @@ const Filter = ({ options }) => {
             }
          />
          <select
-            name="sortingCountriesByContinent"
+            aria-label="sortingCountriesByContinent"
             id="countrySorting"
             className="filter__select"
             onChange={(evt) =>
