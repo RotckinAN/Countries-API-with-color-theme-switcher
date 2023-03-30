@@ -26,7 +26,11 @@ const CountriesCard = ({
             dispatch(getBorderCountries({ actualCountry: country }));
          }}
       >
-         <img className="card__image" src={flags.png} alt={flags.alt} />
+         <img
+            className="card__image"
+            src={flags.png}
+            alt={flags.alt ? flags.alt : `flag of ${name.common}`}
+         />
          <div className="card__textContainer">
             <h2 className="card__title">{name.common}</h2>
             <p className="card__textContent">

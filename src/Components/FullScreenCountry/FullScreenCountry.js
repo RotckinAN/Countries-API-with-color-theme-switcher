@@ -91,7 +91,7 @@ const FullScreenCountry = () => {
             <div className="fullScreenCountry__container">
                <img
                   src={flags.png}
-                  alt={flags.alt}
+                  alt={flags.alt ? flags.alt : `flag of ${name.common}`}
                   className="fullScreenCountry__fullImage"
                />
                <div className="fullScreenCountry__textContainer">
