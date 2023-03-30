@@ -1,0 +1,49 @@
+/* typography */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+html[data-theme=dark] {
+  --backGroundColor: hsl(200, 15%, 8%);
+  --modeElements: hsl(209, 23%, 22%);
+  --colorModeText: hsl(0, 0%, 100%);
+  --colorModeInput: hsl(0, 0%, 52%);
+  --colorModeInputText: hsl(0, 0%, 77%);
+  --boxShadow: 0 0 10px 1px rgb(0, 0, 0);
+}
+
+html[data-theme=light] {
+  --backGroundColor: hsl(0, 0%, 98%);
+  --modeElements: hsl(0, 0%, 100%);
+  --colorModeText: hsl(207, 26%, 17%);
+  --colorModeInput: hsl(209, 23%, 22%);
+  --colorModeInputText: hsl(0, 0%, 52%);
+  --boxShadow: 0 0 10px 1px rgba(219, 219, 219, 0.88);
+}
+
+#root {
+  height: 100%;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.page {
+  font-family: "Nunito Sans", sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  background-color: var(--backGroundColor);
+  flex-direction: column;
+  align-items: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  transition: background-color 0.3s linear;
+}
+
+/*# sourceMappingURL=App.css.map */
