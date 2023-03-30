@@ -1,0 +1,72 @@
+@import "../../styles/styles";
+@import "../../styles/fonts";
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--modeElements);
+  box-shadow: var(--boxShadow);
+  transition: background-color 0.25s linear;
+  position: fixed;
+  z-index: 10;
+}
+
+.header__container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 650px) {
+    padding: 0 25px;
+  }
+}
+
+.header__title {
+  font-weight: $font-weight-extraBold;
+  color: var(--colorModeText);
+  font-size: 25px;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  transition: color 0.25s linear;
+
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+  }
+}
+
+.header__themeToggleButton {
+  display: flex;
+  border: none;
+  background-color: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header__buttonLogo {
+  padding-right: 8px;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+
+.header__buttonLogo_type_light,
+.header__buttonLogo_type_dark {
+  display: block;
+}
+
+.header__themeToggleButton {
+  font-weight: $font-weight-semiBold;
+  color: var(--colorModeText);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: color 0.25s linear;
+}

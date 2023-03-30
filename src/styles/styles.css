@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+/* typography */
+html[data-theme=dark] {
+  --modeElements: hsl(209, 23%, 22%);
+  --colorModeText: hsl(0, 0%, 100%);
+  --colorModeInpit: hsl(209, 23%, 22%);
+}
+
+html[data-theme=light] {
+  --modeElements: hsl(0, 0%, 100%);
+  --colorModeText: hsl(207, 26%, 17%);
+  --colorModeInpit: hsl(0, 0%, 52%);
+}
+
+/*# sourceMappingURL=styles.css.map */

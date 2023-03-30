@@ -1,0 +1,30 @@
+@import '../../styles/fonts';
+@import '../../styles/styles';
+
+#root {
+  height: 100%;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.page {
+  font-family: $font-family-nunitoSans;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  background-color: var(--backGroundColor);
+  flex-direction: column;
+  align-items: center;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  transition: background-color 0.3s linear;
+}

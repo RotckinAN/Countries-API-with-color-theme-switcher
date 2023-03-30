@@ -1,0 +1,14 @@
+.main {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+}
+@media screen and (max-width: 1250px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=Main.css.map */

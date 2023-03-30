@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+html[data-theme=dark] {
+  --backGroundColor: hsl(200, 15%, 8%);
+  --modeElements: hsl(209, 23%, 22%);
+  --colorModeText: hsl(0, 0%, 100%);
+  --colorModeInput: hsl(0, 0%, 52%);
+  --colorModeInputText: hsl(0, 0%, 77%);
+  --boxShadow: 0 0 10px 1px rgb(0, 0, 0);
+}
+
+html[data-theme=light] {
+  --backGroundColor: hsl(0, 0%, 98%);
+  --modeElements: hsl(0, 0%, 100%);
+  --colorModeText: hsl(207, 26%, 17%);
+  --colorModeInput: hsl(209, 23%, 22%);
+  --colorModeInputText: hsl(0, 0%, 52%);
+  --boxShadow: 0 0 10px 1px rgba(219, 219, 219, 0.88);
+}
+
+/* typography */
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--modeElements);
+  box-shadow: var(--boxShadow);
+  transition: background-color 0.25s linear;
+  position: fixed;
+  z-index: 10;
+}
+
+.header__container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 650px) {
+  .header__container {
+    padding: 0 25px;
+  }
+}
+
+.header__title {
+  font-weight: 800;
+  color: var(--colorModeText);
+  font-size: 25px;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  transition: color 0.25s linear;
+}
+@media screen and (max-width: 650px) {
+  .header__title {
+    font-size: 18px;
+  }
+}
+
+.header__themeToggleButton {
+  display: flex;
+  border: none;
+  background-color: inherit;
+}
+.header__themeToggleButton:hover {
+  cursor: pointer;
+}
+
+.header__buttonLogo {
+  padding-right: 8px;
+  width: 18px;
+  height: 18px;
+  display: none;
+}
+
+.header__buttonLogo_type_light,
+.header__buttonLogo_type_dark {
+  display: block;
+}
+
+.header__themeToggleButton {
+  font-weight: 600;
+  color: var(--colorModeText);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: color 0.25s linear;
+}
+
+/*# sourceMappingURL=Header.css.map */

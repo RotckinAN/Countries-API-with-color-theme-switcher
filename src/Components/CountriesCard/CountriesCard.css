@@ -1,0 +1,56 @@
+/* typography */
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: var(--boxShadow);
+  background-color: var(--modeElements);
+  scale: 1;
+  transition: background-color 0.25s linear, scale 0.15s linear;
+}
+.card:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.card__image {
+  height: 160px;
+  width: 270px;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__textContainer {
+  max-height: 180px;
+  padding: 25px 25px 50px 25px;
+  box-sizing: border-box;
+}
+
+.card__title {
+  color: var(--colorModeText);
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  padding-bottom: 20px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.25s linear;
+}
+
+.card__textContent {
+  color: var(--colorModeText);
+  font-weight: 300;
+  font-size: 14px;
+  padding-bottom: 7px;
+  transition: color 0.25s linear;
+}
+.card__textContent span {
+  font-weight: 600;
+}
+.card__textContent:last-of-type {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=CountriesCard.css.map */
