@@ -5,7 +5,7 @@
 ## Welcome! 👋
 
 Приложение выполнено в рамках челенджа проекта [Frontend Mentor](https://www.frontendmentor.io/?ref=challenge) ***"REST Countries API with color theme switcher"***. <br/>
-Готовый вариант приложения расположен [здесь](https://rotckinan.github.io/Countries-API-with-color-theme-switcher/).
+С готовым вариантом приложения можно ознакомиться [здесь](https://rotckinan.github.io/Countries-API-with-color-theme-switcher/).
 
 
 ### Функциональность.
